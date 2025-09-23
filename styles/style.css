@@ -74,6 +74,9 @@ body {
   color: rgb(144, 144, 144);
   text-decoration: none;
 }
+.footer a:hover {
+  text-decoration: underline;
+}
 .nav {
   display: flex;
   gap: 10px;
@@ -174,34 +177,35 @@ body {
   background-color: #47e37e;
   transform: translateY(-8px) scale(1.5);
 }
-.buttons{
-    display: flex;
-    gap: 15px;
-    border: none;
+.buttons {
+  display: flex;
+  gap: 15px;
+  border: none;
 }
-.signUp{
-    color: rgb(165, 165, 165);
-    
-    font-weight: 500;
-    background: transparent;
-    border: none;
-    font-size: 16px;
-    transition: all .1s ease-out;
+.signUp {
+  color: rgb(165, 165, 165);
+  font-weight: 500;
+  background: transparent;
+  border: none;
+  font-size: 16px;
+  transition: all 0.1s ease-out;
 }
-.login{
-    background-color: white;
-    transition: all .1s ease-out;
-    font-size: 16px;
-    font-weight:500;
-    border: none;
-    padding: 16px 28px;
-    border-radius: 50px;
+.login {
+  background-color: white;
+  transition: all 0.1s ease-out;
+  font-size: 16px;
+  font-weight: 500;
+  border: none;
+  padding: 16px 28px;
+  border-radius: 50px;
 }
-.signUp:hover{
-    color: white;
-    transform: scale(1.02);
+.signUp:hover {
+  color: white;
+  transform: scale(1.02);
+  cursor: pointer;
 }
-.login:hover{
-    transform: scale(1.02);
-    background-color: rgb(243, 243, 243);
+.login:hover {
+  cursor: pointer;
+  transform: scale(1.02);
+  background-color: rgb(243, 243, 243);
 }

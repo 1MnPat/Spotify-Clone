@@ -29,6 +29,10 @@
     background-color: #131313;
 }
 
+.ft-grey{
+    color: rgb(165, 165, 165);
+}
+
 .rounded{
     border-radius: 7px;
 }
