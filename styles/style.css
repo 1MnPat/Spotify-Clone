@@ -1,92 +1,207 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
-*{
-    margin: 0;
-    padding: 0;
-    font-family: "Roboto", sans-serif;
-}
-body{
-    background-color: black;
-    color: white ;
-}
-.container{
-    gap: 0;
-}
-.left{
-    width: 25vw;
-    padding: 6px 0;
-}
-.right{
-    width: 75vw;
-    padding: 6px 0 ;
-}
-.logo{
-    width: 74px;
-}
-.home{
-    padding: 20px;
-    font-family: "Roboto", sans-serif;
-}
-.home ul li{
-    display: flex;
-    gap: 15px;
-    width: 14px;
-    list-style: none;
-    padding-top: 14px;
-}
-.heading{
-    display: flex;
-    gap: 15px;
-    width: 100%;
-    padding-top: 14px;
-    padding: 13px 24px;
-    font-weight: bold;
-    align-items: center;
-    font-size: 13px;
-}
-.library{
-    font-size: 14px;
-    min-height: 80vh;
-    position: relative;
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+/* For Chrome, Edge, Safari */
+::-webkit-scrollbar {
+  width: 12px; /* scrollbar width */
 }
 
-.footer{
-    display: flex;
-    width: 100%;
-    flex-wrap: wrap;
-    gap: 15px;
-    font-size: 11px;
-    position: absolute;
-    bottom: 0px;
-}
-.footer a{
-    color: rgb(144, 144, 144);
-    text-decoration: none;
-}
-.nav{
-    display: flex;
-    gap: 10px;
-    height: 27px;
-}
-.nav img{
-    background-color: rgb(16, 16, 16);
-    padding: 5px;
-    border-radius: 100%;
-}
-.header{
-    display: flex;
-    justify-content: space-between;
-    gap: 4px;
-}
-.header > *{
-    padding: 20px;
+* {
+  scrollbar-width: thin; /* auto | thin | none */
+  scrollbar-color: #414141 #343434; /* thumb color | track color */
 }
 
-.main{
-    height: 100vh;
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
 }
-.spotifyPlaylists{
-    background: linear-gradient(to right, black 0%, rgb(4, 4, 4) 20%, rgb(4,4,4) 70%,black 100%);
-    background-color: rgb(55, 55, 55);
-    padding: 16px;
-    height: 80vhw;
+body {
+  background-color: black;
+  color: white;
+}
+.container {
+  gap: 0;
+}
+.left {
+  width: 20vw;
+  padding: 6px 0;
+}
+.right {
+  width: 80vw;
+  padding: 6px 0;
+}
+.logo {
+  width: 74px;
+}
+.home {
+  padding: 20px;
+  font-family: "Roboto", sans-serif;
+}
+.home ul li {
+  display: flex;
+  gap: 15px;
+  width: 14px;
+  list-style: none;
+  padding-top: 14px;
+}
+.heading {
+  display: flex;
+  gap: 15px;
+  width: 100%;
+  padding-top: 14px;
+  padding: 13px 24px;
+  font-weight: bold;
+  align-items: center;
+  font-size: 13px;
+}
+.library {
+  font-size: 14px;
+  min-height: 80vh;
+  position: relative;
+}
+
+.footer {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  gap: 15px;
+  font-size: 11px;
+  position: absolute;
+  bottom: 0px;
+  padding: 30px 0;
+}
+.footer a {
+  color: rgb(144, 144, 144);
+  text-decoration: none;
+}
+.nav {
+  display: flex;
+  gap: 10px;
+  height: 27px;
+}
+.nav img {
+  background-color: rgb(16, 16, 16);
+  padding: 5px;
+  border-radius: 100%;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  gap: 4px;
+}
+.header > * {
+  padding: 20px;
+}
+
+.main {
+  height: 100vh;
+}
+.spotifyPlaylists {
+  background: linear-gradient(
+    to right,
+    black 0%,
+    rgb(12, 12, 12) 20%,
+    rgb(12, 12, 12) 70%,
+    black 100%
+  );
+  background-color: rgb(55, 55, 55);
+  padding: 16px;
+  height: 80vhw;
+}
+.cardContainer {
+  display: flex;
+  width: 100%;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin: 30px;
+  max-height: 70vh;
+  overflow-y: scroll;
+}
+.card {
+  width: 130px;
+  margin: 5px;
+  font-size: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #151515;
+  position: relative;
+  transition: 0.2s all ease-out;
+}
+.play {
+  background-color: #1ed760;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 108px;
+  right: 21px;
+  width: 28px;
+  padding: 4px;
+  text-align: center;
+  transition: all 0.2s ease-out;
+  opacity: 0;
+  box-shadow: 0 7px 5px rgba(0, 0, 0, 0.2);
+}
+.play img {
+  margin: 6px;
+}
+.card > img {
+  object-fit: contain;
+  width: 100%;
+  border-radius: 6px;
+  box-shadow: 4px 8px 16px rgba(0, 0, 0, 0.2);
+}
+.card > * {
+  padding-top: 4px;
+}
+.card p {
+  color: rgb(153, 151, 151);
+}
+.card h2 {
+  font-weight: 800;
+}
+
+.card:hover {
+  background-color: #2f2f2f;
+}
+
+.card:hover .play {
+  transform: translateY(-8px) scale(1);
+  opacity: 1;
+}
+.play:hover {
+  background-color: #47e37e;
+  transform: translateY(-8px) scale(1.5);
+}
+.buttons{
+    display: flex;
+    gap: 15px;
+    border: none;
+}
+.signUp{
+    color: rgb(165, 165, 165);
+    
+    font-weight: 500;
+    background: transparent;
+    border: none;
+    font-size: 16px;
+    transition: all .1s ease-out;
+}
+.login{
+    background-color: white;
+    transition: all .1s ease-out;
+    font-size: 16px;
+    font-weight:500;
+    border: none;
+    padding: 16px 28px;
+    border-radius: 50px;
+}
+.signUp:hover{
+    color: white;
+    transform: scale(1.02);
+}
+.login:hover{
+    transform: scale(1.02);
+    background-color: rgb(243, 243, 243);
 }
