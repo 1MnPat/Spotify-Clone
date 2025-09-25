@@ -224,5 +224,17 @@ body {
   background-color: rgb(94, 125, 94);
   width: 100%;
   padding: 20px;
-  
+  max-height: 100px;
+}
+.songBtn{
+  width: 35px;
+  /* background-color: white; */
+  /* border-radius: 50%; */
+  /* padding: 10px; */
+}
+.songButtons{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
 }
