@@ -37,14 +37,7 @@ async function main() {
                         </li>`; 
     }
 
-
-    // play the first song
-    var audio = new Audio(songs[0])  
-    // audio.play();
-    audio.addEventListener("loadeddata", () => {
-        let duration = audio.duration;
-        console.log(audio.duration, audio.currentSrc, audio.currentTime);
-    });
+    
 
 }
 
